@@ -1,19 +1,19 @@
-name: 'Secret Injector'
-author: 'github.com/Inrixia'
-description: 'GitHub Action to inject Secrets & env values referenced in project files'
+name: "Secret Injector"
+author: "github.com/Inrixia"
+description: "GitHub Action to inject Secrets & env values referenced in project files"
 inputs:
-  secrets:
-    description: 'Workflow secrets'
-    required: false
-    default: "undefined"
-  env:
-    description: 'Workflow env'
-    required: false
-    default: "undefined"
+ secrets:
+  description: "Workflow secrets"
+  required: false
+  default: "undefined"
+ env:
+  description: "Workflow env"
+  required: false
+  default: "undefined"
 runs:
-  using: 'node12'
-  main: 'index.js'
-  
+ using: "node16"
+ main: "index.js"
+
 branding:
-  icon: "activity"
-  color: "green"
+ icon: "activity"
+ color: "green"
